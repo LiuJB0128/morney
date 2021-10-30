@@ -3,10 +3,12 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from 'react-router-dom';
-import Layout from 'components/Layout';
+import Tags from 'views/Tags';
+import Money from './views/Money';
+import Statistics from './views/Statistics';
+import NoMatch from './views/NoMatch';
 
 function App() {
   return (
@@ -27,36 +29,6 @@ function App() {
         </Route>
       </Switch>
     </Router>
-  );
-}
-
-function NoMatch() {
-  return (
-    <div>页面不存在！</div>
-  );
-}
-
-function Statistics() {
-  return (
-    <Layout>
-      <h2>统计页面</h2>
-    </Layout>
-  );
-}
-
-function Tags() {
-  return (
-    <Layout>
-      <h2>标签页面</h2>
-    </Layout>
-  );
-}
-
-function Money() {
-  return (
-    <Layout>
-      <h2>记账页面</h2>
-    </Layout>
   );
 }
 
