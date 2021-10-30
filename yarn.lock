@@ -1853,11 +1853,6 @@
   resolved "https://registry.npm.taobao.org/@tootallnate/once/download/@tootallnate/once-1.1.2.tgz#ccb91445360179a04e7fe6aff78c00ffc1eeaf82"
   integrity sha1-zLkURTYBeaBOf+av94wA/8Hur4I=
 
-"@trysound/sax@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.nlark.com/@trysound/sax/download/@trysound/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
-  integrity sha1-zMqrdYr1Z2Hre/N69vA/Mm3XmK0=
-
 "@types/aria-query@^4.2.0":
   version "4.2.2"
   resolved "https://registry.nlark.com/@types/aria-query/download/@types/aria-query-4.2.2.tgz#ed4e0ad92306a704f9fb132a0cfcf77486dbe2bc"
@@ -3681,11 +3676,6 @@ commander@^4.1.1:
   resolved "https://registry.nlark.com/commander/download/commander-4.1.1.tgz?cache=0&sync_timestamp=1627359190297&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommander%2Fdownload%2Fcommander-4.1.1.tgz#9fd602bd936294e9e9ef46a3f4d6964044b18068"
   integrity sha1-n9YCvZNilOnp70aj9NaWQESxgGg=
 
-commander@^7.2.0:
-  version "7.2.0"
-  resolved "https://registry.npmmirror.com/commander/download/commander-7.2.0.tgz?cache=0&sync_timestamp=1634886396986&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fcommander%2Fdownload%2Fcommander-7.2.0.tgz#a36cb57d0b501ce108e4d20559a150a391d97ab7"
-  integrity sha1-o2y1fQtQHOEI5NIFWaFQo5HZerc=
-
 common-tags@^1.8.0:
   version "1.8.0"
   resolved "https://registry.nlark.com/common-tags/download/common-tags-1.8.0.tgz?cache=0&sync_timestamp=1618849039132&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fcommon-tags%2Fdownload%2Fcommon-tags-1.8.0.tgz#8e3153e542d4a39e9b10554434afaaf98956a937"
@@ -4055,7 +4045,7 @@ css-tree@1.0.0-alpha.37:
     mdn-data "2.0.4"
     source-map "^0.6.1"
 
-css-tree@^1.1.2, css-tree@^1.1.3:
+css-tree@^1.1.2:
   version "1.1.3"
   resolved "https://registry.nlark.com/css-tree/download/css-tree-1.1.3.tgz#eb4870fb6fd7707327ec95c2ff2ab09b5e8db91d"
   integrity sha1-60hw+2/XcHMn7JXC/yqwm16NuR0=
@@ -4180,7 +4170,7 @@ cssnano@^4.1.10:
     is-resolvable "^1.0.0"
     postcss "^7.0.0"
 
-csso@^4.0.2, csso@^4.2.0:
+csso@^4.0.2:
   version "4.2.0"
   resolved "https://registry.npm.taobao.org/csso/download/csso-4.2.0.tgz#ea3a561346e8dc9f546d6febedd50187cf389529"
   integrity sha1-6jpWE0bo3J9UbW/r7dUBh884lSk=
@@ -7782,11 +7772,6 @@ nan@^2.12.1:
   resolved "https://registry.nlark.com/nan/download/nan-2.15.0.tgz?cache=0&sync_timestamp=1628093719696&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnan%2Fdownload%2Fnan-2.15.0.tgz#3f34a473ff18e15c1b5626b62903b5ad6e665fee"
   integrity sha1-PzSkc/8Y4VwbVia2KQO1rW5mX+4=
 
-nanocolors@^0.1.12:
-  version "0.1.12"
-  resolved "https://registry.npmmirror.com/nanocolors/download/nanocolors-0.1.12.tgz?cache=0&sync_timestamp=1633782088650&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fnanocolors%2Fdownload%2Fnanocolors-0.1.12.tgz#8577482c58cbd7b5bb1681db4cf48f11a87fd5f6"
-  integrity sha1-hXdILFjL17W7FoHbTPSPEah/1fY=
-
 nanoid@^3.1.23:
   version "3.1.25"
   resolved "https://registry.nlark.com/nanoid/download/nanoid-3.1.25.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fnanoid%2Fdownload%2Fnanoid-3.1.25.tgz#09ca32747c0e543f0e1814b7d3793477f9c8e152"
@@ -10864,13 +10849,13 @@ svg-sprite-loader@^6.0.11:
     svg-baker-runtime "^1.4.7"
     url-slug "2.0.0"
 
-svgo-loader@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/svgo-loader/download/svgo-loader-3.0.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsvgo-loader%2Fdownload%2Fsvgo-loader-3.0.0.tgz#9112db53005bf3432dbb020542cd69b20a0d1e52"
-  integrity sha1-kRLbUwBb80MtuwIFQs1psgoNHlI=
+svgo-loader@2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/svgo-loader/download/svgo-loader-2.2.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsvgo-loader%2Fdownload%2Fsvgo-loader-2.2.1.tgz#ca1c9ad22e120bb45a5250233737da4d85521704"
+  integrity sha1-yhya0i4SC7RaUlAjNzfaTYVSFwQ=
   dependencies:
+    js-yaml "^3.13.1"
     loader-utils "^1.0.3"
-    svgo "^2.2.0"
 
 svgo@^1.0.0, svgo@^1.2.2:
   version "1.3.2"
@@ -10890,19 +10875,6 @@ svgo@^1.0.0, svgo@^1.2.2:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
-
-svgo@^2.2.0:
-  version "2.7.0"
-  resolved "https://registry.npmmirror.com/svgo/download/svgo-2.7.0.tgz#e164cded22f4408fe4978f082be80159caea1e2d"
-  integrity sha1-4WTN7SL0QI/kl48IK+gBWcrqHi0=
-  dependencies:
-    "@trysound/sax" "0.2.0"
-    commander "^7.2.0"
-    css-select "^4.1.3"
-    css-tree "^1.1.3"
-    csso "^4.2.0"
-    nanocolors "^0.1.12"
-    stable "^0.1.8"
 
 symbol-tree@^3.2.4:
   version "3.2.4"
