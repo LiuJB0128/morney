@@ -4,17 +4,20 @@ import styled from 'styled-components';
 
 const CategorySection = styled.section`
   font-size: 16px;
+
   > ul {
-    display:flex;
+    display: flex;
     background: #c4c4c4;
+
     > li {
       width: 50%;
       text-align: center;
       padding: 16px 0;
       position: relative;
+
       &.selected::after {
         content: '';
-        display:block;
+        display: block;
         background: #333;
         height: 3px;
         position: absolute;
@@ -24,16 +27,30 @@ const CategorySection = styled.section`
       }
     }
   }
-`
+`;
 
-const InputSection = styled.section``
+const OutPutSection = styled.section`
+  display: flex;
+  flex-direction: column;
+
+  > span {
+    background: #ffff;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: right;
+    padding: 0 16px;
+    box-shadow: inset 0 -5px 5px -5px rgba(0, 0, 0, 0.25);
+  }
+`;
 
 const TagsSection = styled.section`
   background: #FFFFFF;
   padding: 12px 16px;
+
   > ol {
     padding: 0 4px;
     margin: 0 -12px;
+
     > li {
       background: #D9D9D9;
       border-radius: 18px;
@@ -43,23 +60,27 @@ const TagsSection = styled.section`
       margin: 8px 12px;
     }
   }
+
   > button {
     border: none;
     background: none;
   }
-`
+`;
 
 const NotesSection = styled.section`
   background: #f5f5f5;
   padding: 0 16px;
   font-size: 16px;
+
   > label {
-    display:flex;
+    display: flex;
     align-items: center;
+
     > span {
       margin-right: 16px;
       white-space: nowrap;
     }
+
     > input {
       display: block;
       width: 100%;
@@ -68,9 +89,51 @@ const NotesSection = styled.section`
       border: none;
     }
   }
-`
+`;
 
-const NumberPadSection = styled.section``
+const NumberPadSection = styled.section`
+  > div {
+    > button {
+      font-size: 18px;
+      float: left;
+      width: 25%;
+      height: 64px;
+      border: none;
+      &.ok {
+        height: 192px;
+        float: right;
+      }
+      &:nth-child(1) {
+        background: #f2f2f2;
+      }
+      &:nth-child(2),
+      &:nth-child(5) {
+        background: #e0e0e0;
+      }
+      &:nth-child(3),
+      &:nth-child(6),
+      &:nth-child(9) {
+        background: #d3d3d3;
+      }
+      &:nth-child(4),
+      &:nth-child(7),
+      &:nth-child(10),
+      &:nth-child(12) {
+        background: #c1c1c1;
+      }
+      &:nth-child(11),
+      &:nth-child(13) {
+        background: #b8b8b8;
+      }
+      &:nth-child(14) {
+        background: #a9a9a9;
+      }
+      &:nth-child(8) {
+        background: #9a9a9a;
+      }
+    }
+  }
+`;
 
 function Money() {
   return (
@@ -81,9 +144,9 @@ function Money() {
           <li>收入</li>
         </ul>
       </CategorySection>
-      <InputSection>
+      <OutPutSection>
         <span>￥0</span>
-      </InputSection>
+      </OutPutSection>
       <TagsSection>
         <ol>
           <li>其他</li>
@@ -100,7 +163,7 @@ function Money() {
         </label>
       </NotesSection>
       <NumberPadSection>
-        <div>
+        <div className="clearfix">
           <button>1</button>
           <button>2</button>
           <button>3</button>
@@ -108,7 +171,7 @@ function Money() {
           <button>4</button>
           <button>5</button>
           <button>6</button>
-          <button>确定</button>
+          <button className="ok">确定</button>
           <button>7</button>
           <button>8</button>
           <button>9</button>
