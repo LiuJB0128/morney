@@ -46,6 +46,7 @@ const OutPutSection = styled.section`
 const TagsSection = styled.section`
   background: #FFFFFF;
   padding: 12px 16px;
+  flex-grow: 1;
 
   > ol {
     padding: 0 4px;
@@ -135,9 +136,14 @@ const NumberPadSection = styled.section`
   }
 `;
 
+const MyLayout = styled(Layout)`
+  display:flex;
+  flex-direction: column;
+`
+
 function Money() {
   return (
-    <Layout>
+    <MyLayout>
       <CategorySection>
         <ul>
           <li className="selected">支出</li>
@@ -180,7 +186,7 @@ function Money() {
           <button>.</button>
         </div>
       </NumberPadSection>
-    </Layout>
+    </MyLayout>
   );
 }
 
