@@ -1,16 +1,16 @@
 import Layout from 'components/Layout';
 import React from 'react';
 import styled from 'styled-components';
-import { CategorySection } from './Money/CategorySection';
-import { NotesSection } from './Money/NotesSection';
-import { NumberPadSection } from './Money/NumberPadSection';
-import { OutPutSection } from './Money/OutPutSection';
-import { TagsSection } from './Money/TagsSection';
+import {CategorySection} from './Money/CategorySection';
+import {NoteSection} from './Money/NoteSection';
+import {NumberPadSection} from './Money/NumberPadSection';
+import {OutPutSection} from './Money/OutPutSection';
+import {TagsSection} from './Money/TagsSection';
 
 const MyLayout = styled(Layout)`
-  display:flex;
+  display: flex;
   flex-direction: column;
-`
+`;
 
 function Money() {
   return (
@@ -24,14 +24,8 @@ function Money() {
       <OutPutSection>
         <span>￥0</span>
       </OutPutSection>
-      <TagsSection>
-      </TagsSection>
-      <NotesSection>
-        <label>
-          <span>备注</span>
-          <input type="text" placeholder="添加备注"/>
-        </label>
-      </NotesSection>
+      <TagsSection/>
+      <NoteSection/>
       <NumberPadSection>
         <div className="clearfix">
           <button>1</button>
