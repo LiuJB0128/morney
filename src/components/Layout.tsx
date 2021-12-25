@@ -1,4 +1,4 @@
-import Nav from './Nav';
+import {Nav} from './Nav';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -25,4 +25,4 @@ const Layout = (props: any) => {
   )
 }
 
-export default Layout;
+export {Layout};

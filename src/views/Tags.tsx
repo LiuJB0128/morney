@@ -1,4 +1,4 @@
-import Layout from '../components/Layout';
+import {Layout} from '../components/Layout';
 import React from 'react';
 
 function Tags() {
@@ -9,4 +9,4 @@ function Tags() {
   );
 }
 
-export default Tags;
+export {Tags};

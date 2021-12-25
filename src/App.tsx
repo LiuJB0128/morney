@@ -5,10 +5,10 @@ import {
   Route,
   Redirect
 } from 'react-router-dom';
-import Tags from 'views/Tags';
-import Money from './views/Money';
-import Statistics from './views/Statistics';
-import NoMatch from './views/NoMatch';
+import {Tags} from 'views/Tags';
+import {Money} from './views/Money';
+import {Statistics} from './views/Statistics';
+import {NoMatch} from './views/NoMatch';
 
 function App() {
   return (
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export {App};
