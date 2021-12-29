@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 
 const Wrapper = styled.section`
   font-size: 16px;
+  line-height: 16px;
 
   > ul {
     display: flex;
