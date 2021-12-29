@@ -6,23 +6,27 @@ const Wrapper = styled.section`
 
   > ul {
     display: flex;
-    background: #c4c4c4;
+    background: #FF9E00;
+    justify-content: center;
+    
 
     > li {
-      width: 50%;
+      width: 25%;
       text-align: center;
       padding: 16px 0;
       position: relative;
+      
+      
 
       &.selected::after {
         content: '';
         display: block;
-        background: #333;
+        background: #000;
         height: 3px;
         position: absolute;
         bottom: 0;
-        width: 100%;
-        left: 0;
+        width: 50%;
+        left: 25%;
       }
     }
   }

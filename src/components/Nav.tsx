@@ -28,10 +28,10 @@ const NavWrapper = styled.nav`
         }
 
         &.selected {
-          color: #f40;
+          color: #FF8C19;
 
           .icon {
-            fill: #f40;
+            fill: #FF8C19;
           }
         }
       }
