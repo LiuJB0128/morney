@@ -5,9 +5,9 @@ import {Layout} from 'components/Layout';
 import Icon from 'components/Icon';
 import {Button} from 'components/Button';
 import styled from 'styled-components';
-import { Input } from 'components/Input';
+import {Input} from 'components/Input';
 import {Center} from 'components/Center';
-import { Space } from 'components/Space';
+import {Space} from 'components/Space';
 
 type Params = {
   id: string
@@ -21,14 +21,14 @@ const Topbar = styled.header`
   background: #FF9E00;
 `;
 const InputWrapper = styled.div`
-background: white;
+  background: white;
   padding: 0 16px;
   margin-top: 8px;
-`
+`;
 const Tag: React.FC = () => {
-  const {findTag} = useTags();
-  let {id} = useParams<Params>();
-  const tag = findTag(parseInt(id));
+  const {findTag, updateTag} = useTags();
+  let {id:idString} = useParams<Params>();
+  const tag = findTag(parseInt(idString));
   return (
     <Layout>
       <Topbar>
@@ -37,7 +37,10 @@ const Tag: React.FC = () => {
         <Icon/>
       </Topbar>
       <InputWrapper>
-        <Input label="名称" type="text" placeholder={tag.name}/>
+        <Input label="名称" type="text" placeholder={tag.name}
+               onChange={(e) => {
+                 updateTag(tag.id, {name: e.target.value});
+               }}/>
       </InputWrapper>
       <Center>
         <Space/>
