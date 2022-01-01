@@ -25,7 +25,7 @@ const Wrapper = styled.section`
         height: 192px;
         float: right;
       }
-      
+
       &:nth-child(1),
       &:nth-child(2),
       &:nth-child(3),
@@ -39,7 +39,7 @@ const Wrapper = styled.section`
         border-bottom: 1px solid #dadce0;
         background: #f1f3f4;
       }
-      
+
       &:nth-child(12),
       &:nth-child(13),
       &:nth-child(14) {
@@ -51,9 +51,19 @@ const Wrapper = styled.section`
         border-bottom: 1px solid #dadce0;
         background: #f1f3f4;
       }
-      
+
       &:nth-child(8) {
         background: #f1f3f4;
+      }
+    }
+
+    @media (max-height: 570px) {
+      > button {
+        height: 40px;
+
+        &.ok {
+          height: 80px;
+        }
       }
     }
   }

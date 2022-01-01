@@ -6,6 +6,9 @@ const Wrapper = styled.section`
   background: #FFFFFF;
   padding: 12px 16px;
   flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
+  
 
   > ol {
     padding: 0 4px;
