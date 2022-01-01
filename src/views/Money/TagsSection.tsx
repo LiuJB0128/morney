@@ -55,7 +55,7 @@ const TagsSection: React.FC<Props> = (props) => {
               className={getClass(tag.id)}>{tag.name}</li>
         )}
       </ol>
-      <button onClick={addTag}>设置</button>
+      <button onClick={addTag}>添加</button>
     </Wrapper>
   );
 };
